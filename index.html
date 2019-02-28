@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <title>Emma and Eric Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="janimate.min.js"></script>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Welcome to Emma and Eric Home Page!</h1>
+    <table width="100%" style="text-align: center;">
+        <tr>
+            <td width="50%">
+                <img id="emma" src="emmaeric.jpg" width="400px;" onclick="clickEmma();" style="cursor: pointer;" />
+            </td>
+            <td width="50%">
+                <img id="eric" src="emmaeric.jpg" width="400px;" onclick="clickEric();" style="cursor: pointer;" />
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        function clickEmma() {
+            $('#emma').jAnimate('jello');
+        }
+
+        function clickEric() {
+            $('#eric').jAnimate('jello');
+        }
+    </script>
+</body>
+
+</html>
