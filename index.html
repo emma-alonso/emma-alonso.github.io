@@ -12,14 +12,17 @@
     <table width="100%" style="text-align: center;">
         <tr>
             <td width="50%">
-                <img id="emma" src="emmaeric.jpg" width="400px;" onclick="clickEmma();" style="cursor: pointer;" />
+                <img id="emma" class="kid" src="emmaeric.jpg" width="400px;" onclick="clickEmma();"
+                    style="cursor: pointer;" />
             </td>
             <td width="50%">
-                <img id="eric" src="emmaeric.jpg" width="400px;" onclick="clickEric();" style="cursor: pointer;" />
+                <img id="eric" class="kid" src="emmaeric.jpg" width="400px;" onclick="clickEric();"
+                    style="cursor: pointer;" />
             </td>
         </tr>
     </table>
 
+    <div id="hidden" style="width: 50px; height: 50px;" onclick="clickHidden();"></div>
     <script>
         function clickEmma() {
             $('#emma').jAnimate('jello');
@@ -27,6 +30,10 @@
 
         function clickEric() {
             $('#eric').jAnimate('jello');
+        }
+
+        function clickHidden() {
+            $('.kid').jAnimate('tada');
         }
     </script>
 </body>
