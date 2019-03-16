@@ -1,41 +1,46 @@
 <html>
-
-<head>
-    <title>Emma and Eric Home Page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <head>
+        <title>
+            Chibi Page
+        </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="janimate.min.js"></script>
-</head>
 
-<body>
-    <h1 style="text-align: center;">Welcome to Emma and Eric Home Page!</h1>
-    <table width="100%" style="text-align: center;">
-        <tr>
-            <td width="50%">
-                <img id="emma" class="kid" src="emmaeric.jpg" width="400px;" onclick="clickEmma();"
-                    style="cursor: pointer;" />
-            </td>
-            <td width="50%">
-                <img id="eric" class="kid" src="emmaeric.jpg" width="400px;" onclick="clickEric();"
-                    style="cursor: pointer;" />
-            </td>
-        </tr>
-    </table>
+    </head>
+    <body>
+        <h1>
+         Welcome to the Chibi Page, Where We have Chibis  
+        </h1>
 
-    <div id="hidden" style="width: 50px; height: 50px;" onclick="clickHidden();"></div>
-    <script>
-        function clickEmma() {
-            $('#emma').jAnimate('jello');
-        }
+        <h2>
+           <b>
+            <u>
+             Minecraft Chibis
+           </u>
+           </b> 
+            
+        </h2>
+        <img id="chibi" src="chibi.png" onclick="move1()">
+        <img id="ender" width="440px" src="ender chibi.png" onclick="move2()">
+        <img id="dragon" width="440px" src="Dragon chibis.png" onclick="move3()">
 
-        function clickEric() {
-            $('#eric').jAnimate('jello');
-        }
+        <script>
+            function move1() {
+                $('#chibi').jAnimate('tada')
 
-        function clickHidden() {
-            $('.kid').jAnimate('tada');
-        }
-    </script>
-</body>
+            }
+        </script>
 
+        <script>
+            function move2() {
+                $('#ender').jAnimate('jello')
+            }
+        </script>
+        <script>
+            function move3() {
+                $('#dragon').jAnimate('wobble')
+            }
+        </script>
+    </body>
 </html>
