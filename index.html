@@ -24,44 +24,35 @@
            </b> 
             
         </h2>
-        <img id="chibi" src="chibi.png" onclick="move1()">
-        <img id="ender" width="440px" src="ender chibi.png" onclick="move2()">
-        <img id="dragon" width="350px" src="ghast.png" onclick="move3()">
+        <img src="chibi.png" onclick="move(event,'tada')">
+        <img width="440px" src="ender chibi.png" onclick="move(event, 'jello')">
+        <img width="350px" src="ghast.png" onclick="move(event, 'wobble')">
 
         <script>
-            function move1() {
-                $('#chibi').jAnimate('tada')
-
-            }
-       
-            function move2() {
-                $('#ender').jAnimate('jello')
-            }
-     
-            function move3() {
-                $('#dragon').jAnimate('wobble')
-            }
-        </script>
-        <h2>
-            Holiday Chibis
-        </h2>
-        <img id="bun" width="430px" src="bunny.gif" onclick="move4()">
-        <img id="prezzie" width="430px" src="prezzie.jpg"onclick="move5()">
-        <img id="cat" width="430px" src="chat.jpg"onclick="move6()">
-        <script>
-            function move4() {
-                $('#bun').jAnimate('flip')
-            }
-       
-            function move5() {
-                $('#prezzie').jAnimate('tada')
-            }
-
-            function move6() {
-                $('#cat').jAnimate('zoomIn')
+            function move(event, animation) {
+                $(event.target).jAnimate(animation || 'tada');
             }
         </script>
         
+        <h2><b><u>
+           Holiday Chibis
+        </u>
+        </b>
+        </h2>
+        <img width="430px" src="bunny.gif" onclick="move(event,'flip')">
+        <img width="430px" src="prezzie.jpg" onclick="move(event, 'tada')">
+        <img width="430px" src="chat.jpg" onclick="move(event,'zoomIn')">
+        
+        <h2><b><u>
+             Dessert Chibis
+        </u>
+        </b>
+        </h2>
+        <img width="430px" src="macaron.png" onclick="move(event,'jackInTheBox')">
+        <img width="430px" src="frozen.jpg" onclick="move(event,'rubberBand')">
+        <img width="430px" src="mint.png" onclick="move(event,'pulse')">
+         
+         
     </body>
 
 </html>
